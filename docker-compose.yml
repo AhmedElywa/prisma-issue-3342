@@ -1,0 +1,12 @@
+# For local dev use - creates a postgres server.  Use "yarn db-start"
+version: "3"
+services:
+  db:
+    image: "postgres:11.8"
+    container_name: "test"
+    environment:
+      - POSTGRES_USER=ahmed
+      - POSTGRES_PASSWORD=ahmed
+      - POSTGRES_DB=issue_3342
+    ports:
+      - "5433:5432"

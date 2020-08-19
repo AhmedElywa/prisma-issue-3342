@@ -18,4 +18,3 @@ model Sale {
   date   DateTime
   buyers Buyer[]  @relation("BuyersOnSale", references: [id])
 }
-
