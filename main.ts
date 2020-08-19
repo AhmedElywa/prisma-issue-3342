@@ -8,7 +8,8 @@ async function main() {
         where: {
           OR: [
             {
-              date: '2020-08-19T10:02:43.353Z',
+              date: '2020-08-19T10:02:43.353Z', // not working
+              // date: { equals: '2020-08-19T10:02:43.353Z' }, working
             },
           ],
         },
