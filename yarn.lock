@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@prisma/cli@2.5.1-dev.3":
-  version "2.5.1-dev.3"
-  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.5.1-dev.3.tgz#d76d2ea57b4521cb59d1e954435d845df7d99da9"
-  integrity sha512-t6SLxKoFcyPt0N4HzdIiip7bNZtrI1mI09RUUgGHfg9FkOXqTjhZICA9lL9DUHt/6PMDf3hqOM5lhlkaVvHTSw==
+"@prisma/cli@2.5.1-dev.4":
+  version "2.5.1-dev.4"
+  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.5.1-dev.4.tgz#10ec4263467e3157fee673e1403a205cfdad2934"
+  integrity sha512-xNB32u0Ip/YLfQm/9S6I5+t5d4y8AC3gtkYdXxbeYRIZgxgNqsKveMwK/khmS0U0ooiuhc2bqXGax4m477fTSw==
 
-"@prisma/client@2.5.1-dev.3":
-  version "2.5.1-dev.3"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.5.1-dev.3.tgz#a988fcb6010cb755396167bad732ae7ca172778d"
-  integrity sha512-yyifP1mLDrU3lvU8kIlzYdElNe5iM5lLETSH3pJAwuj84T2LdKRaskCtU3Kw3wVvQOr8pKXhelVymBnvdduByQ==
+"@prisma/client@2.5.1-dev.4":
+  version "2.5.1-dev.4"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.5.1-dev.4.tgz#f55578976e0aad3ef4c688bf9357c1d9de0471ab"
+  integrity sha512-v2lLO+fo0447VkNdHWWu9BZ7CM1AB0X/PMPWonm/kZ5XvWqQ9plqCKJ1+wFQYNmMIfWhntvenChLwowisFYOYA==
   dependencies:
     pkg-up "^3.1.0"
 

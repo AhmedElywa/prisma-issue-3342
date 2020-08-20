@@ -14,7 +14,7 @@ model Buyer {
 }
 
 model Sale {
-  id     String   @id @default(cuid())
-  date   DateTime
-  buyers Buyer[]  @relation("BuyersOnSale", references: [id])
+  id     String    @id @default(cuid())
+  date   DateTime?
+  buyers Buyer[]   @relation("BuyersOnSale", references: [id])
 }

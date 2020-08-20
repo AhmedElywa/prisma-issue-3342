@@ -2,9 +2,13 @@ import { PrismaClient } from '@prisma/client';
 
 async function main() {
   const prisma = new PrismaClient();
-  const result = await prisma.buyer.findMany({
+  const result = await prisma.sale.findMany({
     where: {
-      name: { not: null },
+      OR: [
+        {
+          date: { not: null },
+        },
+      ],
     },
   });
   console.log(result);
