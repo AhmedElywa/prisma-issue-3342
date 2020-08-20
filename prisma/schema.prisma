@@ -8,9 +8,9 @@ datasource db {
 }
 
 model Buyer {
-  id    String @id @default(cuid())
-  name  String
-  sales Sale[] @relation("BuyersOnSale", references: [id])
+  id    String  @id @default(cuid())
+  name  String?
+  sales Sale[]  @relation("BuyersOnSale", references: [id])
 }
 
 model Sale {
