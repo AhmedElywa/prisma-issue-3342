@@ -52,6 +52,7 @@ async function main() {
       sales: {
         select: {
           id: true,
+          // issue happen when we select product here and we already get it in top level
           products: {
             select: {
               id: true,
