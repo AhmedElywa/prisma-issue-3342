@@ -1,7 +1,6 @@
 ## Introduction
 
-This repository contains reproduction for https://github.com/prisma/prisma/issues/3342
-
+This repository contains reproduction for https://github.com/prisma/prisma-client-js/issues/933
 
 ### Steps for Reproduction
 
@@ -11,15 +10,16 @@ This repository contains reproduction for https://github.com/prisma/prisma/issue
 4. Run `npx prisma generate`
 5. Run `yarn start`
 
-
 ### Version
+
 ```
 Environment variables loaded from prisma/.env
-@prisma/cli          : 2.5.0
+@prisma/cli          : 2.11.0
+@prisma/client       : 2.11.0
 Current platform     : darwin
-Query Engine         : query-engine 9a670138b1db276001d785a2adcba1584c869d24 (at node_modules/@prisma/cli/query-engine-darwin)
-Migration Engine     : migration-engine-cli 9a670138b1db276001d785a2adcba1584c869d24 (at node_modules/@prisma/cli/migration-engine-darwin)
-Introspection Engine : introspection-core 9a670138b1db276001d785a2adcba1584c869d24 (at node_modules/@prisma/cli/introspection-engine-darwin)
-Format Binary        : prisma-fmt 9a670138b1db276001d785a2adcba1584c869d24 (at node_modules/@prisma/cli/prisma-fmt-darwin)
-Studio               : 0.259.0
+Query Engine         : query-engine 58369335532e47bdcec77a2f1e7c1fb83a463918 (at node_modules/@prisma/engines/query-engine-darwin)
+Migration Engine     : migration-engine-cli 58369335532e47bdcec77a2f1e7c1fb83a463918 (at node_modules/@prisma/engines/migration-engine-darwin)
+Introspection Engine : introspection-core 58369335532e47bdcec77a2f1e7c1fb83a463918 (at node_modules/@prisma/engines/introspection-engine-darwin)
+Format Binary        : prisma-fmt 58369335532e47bdcec77a2f1e7c1fb83a463918 (at node_modules/@prisma/engines/prisma-fmt-darwin)
+Studio               : 0.311.0
 ```

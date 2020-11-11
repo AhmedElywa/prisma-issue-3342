@@ -8,13 +8,22 @@ datasource db {
 }
 
 model Buyer {
-  id    String  @id @default(cuid())
-  name  String?
-  sales Sale[]  @relation("BuyersOnSale", references: [id])
+  id       String    @id @default(cuid())
+  name     String?
+  sales    Sale[]    @relation("BuyersOnSale", references: [id])
+  products Product[] @relation("BuyersOnProduct", references: [id])
 }
 
 model Sale {
-  id     String    @id @default(cuid())
-  date   DateTime?
-  buyers Buyer[]   @relation("BuyersOnSale", references: [id])
+  id       String    @id @default(cuid())
+  date     DateTime?
+  buyers   Buyer[]   @relation("BuyersOnSale", references: [id])
+  products Product[] @relation("SalesOnProduct", references: [id])
+}
+
+model Product {
+  id     String  @id @default(cuid())
+  name   String?
+  buyers Buyer[] @relation("BuyersOnProduct", references: [id])
+  sales  Sale[]  @relation("SalesOnProduct", references: [id])
 }
