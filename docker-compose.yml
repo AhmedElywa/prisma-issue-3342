@@ -7,6 +7,6 @@ services:
     environment:
       - POSTGRES_USER=ahmed
       - POSTGRES_PASSWORD=ahmed
-      - POSTGRES_DB=issue_3342
+      - POSTGRES_DB=issue_933
     ports:
       - "5433:5432"
